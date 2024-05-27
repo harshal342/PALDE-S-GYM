@@ -30,7 +30,7 @@
 }
 
 .blog_image_container {
-    height: 900px !important;
+    height: 600px !important;
     width: auto !important;
     background: url('./../img/front_img/wall.jpg');
     opacity: 100px;
@@ -57,45 +57,6 @@
     align-items: center;
   }
 
- 
-.newsletter h3 {
-color: #333;
-margin-bottom: 10px;
-}
-.newsletter p {
-color: #666;
-margin-bottom: 10px;
-
-}
-.newsletter input[type="email"] {
-padding: 10px;
-width: 70%;
-border: 1px solid #ccc;
-border-radius: 5px;
-margin-bottom: 10px;
-}
-.newsletter input[type="submit"] {
-padding: 10px 20px;
-background-color: #49e4ff;
-color: black;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
-.newsletter input[type="submit"]:hover {
-background-color: #90eeff;
-}
-.email-input {
-width: 300px;
-padding: 10px;
-border: 1px solid #ccc;
-border-radius: 5px;
-margin:10px auto;
-margin-bottom: 10px;
-}
-.error-message {
-color: red;
-}
   .footer {
 background-color: black;
 padding: 40px;
