@@ -48,6 +48,27 @@
         </div>
         </div>
     </div>
+
+    <h1 class="heading my-5"> TOP GYMERS</h1>
+
+    <div class="gallery-wrap">
+        <img src="./icons/left.png" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span class="img-title"><img class="slider-img" src="./img/front_img/gym1.jpg"></span>
+                <span class="img-title"><img class="slider-img" src="./img/front_img/gym2.jpg"></span>
+                <span class="img-title"><img class="slider-img" src="./img/front_img/gym3.jpg"></span>
+    
+            </div>
+            <div>
+              <span class="img-title"><img class="slider-img" src="./img/front_img/gym4.jpg"></span>
+              <span class="img-title"><img class="slider-img" src="./img/front_img/gym5.jpg"></span>
+              <span class="img-title"><img class="slider-img" src="./img/front_img/gym7.jpg"></span>
+            </div>
+        </div>
+        <img src="./icons/right.png" id="nextBtn">
+    </div>
+    
     
     <div class="container-footer">
         <div class="newsletter p-2 justify-content-center">
@@ -111,5 +132,29 @@
       </footer>
       </div>
       
+      
+      <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+        
+        scrollContainer.addEventListener("wheel",(evt) =>{
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior ="auto";
+        
+        });
+        
+        nextBtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehavior ="smooth";
+            scrollContainer.scrollLeft += 900;
+        });
+        backBtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehavior ="smooth";
+            scrollContainer.scrollLeft -= 900;
+        });
+              </script>
+
+
 </body>
 </html>
