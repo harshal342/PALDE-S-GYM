@@ -278,3 +278,32 @@ height: auto;
 }
 
   
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 40px;
+  }
+
+  .column-2 {
+    width: 45%;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .footer-container2,
+  .footer-container {
+     width: 100%;
+   }
+ }
+ 
+  @media (max-width: 768px) {
+    .footer-container2 > div,
+    .footer-container > div {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+   
+    .footer-head {
+       margin-bottom: 10px;
+     }
+   }
